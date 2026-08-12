@@ -2,6 +2,16 @@
 name = "sudont"
 version = "1.0.0"
 edition = "2024"
+description = "sudo but... just dont"
+readme = "README.md"
+repository = "https://github.com/cerealdevv/sudont"
+keywords = ["cli", "joke", "sudo"]
+categories = ["command-line-utilities"]
+license = "GPL-2.0-only"
+
+[[bin]]
+name = "sudont"
+path = "src/main.rs"
 
 [dependencies]
 ctrlc = "3.5.2"
