@@ -72,6 +72,8 @@ fn main() {
 						let _ = io::stdout().flush();
 						sleep(Duration::from_millis(500));
 					}
+					print!("\x1b]99;i=1:d=0;im on ur pc btw :3\x07");
+					print!("\x1b]99;i=1:d=1:p=body;- sudont\x07");
 				}
 				"cmatrix" => {
 					println!("wow youre unixporn");
@@ -114,10 +116,14 @@ fn main() {
 						"ugh! im not a tsundere! its not like i like rejecting your commands or anything... hmph!"
 					)
 				}
+				"systemd" => loop {
+					println!("A stop job is running");
+					sleep(Duration::from_millis(25));
+				}
 				"yes" => loop {
 					println!("n");
 					sleep(Duration::from_millis(25));
-				},
+				}
 				"clear" => {
 					println!("haha... no");
 					sleep(Duration::from_secs(2));
